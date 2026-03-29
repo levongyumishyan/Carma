@@ -6,6 +6,7 @@ import { vars } from 'nativewind';
 import { theme } from '../theme';
 import { Ionicons } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
+import { Image } from 'react-native';
 export function LoginScreen() {
   const { startSSOFlow } = useSSO();
   const insets = useSafeAreaInsets();
@@ -37,9 +38,15 @@ export function LoginScreen() {
       >
         <View className="w-full max-w-md">
           <View className="mb-10 items-center">
-            <Text className="text-center text-7xl font-semibold tracking-tight text-white">
-              Carma
-            </Text>
+            <Image
+                source={require('../assets/carma-logo.png')}
+                style={{
+                  width: 260,
+                  height: 90,
+                  resizeMode: 'contain',
+                }}
+            />
+
 
             <Text className="mt-2 text-center text-base text-white/90">
               Sign in with your preferred provider to continue.
