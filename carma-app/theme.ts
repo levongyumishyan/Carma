@@ -1,0 +1,26 @@
+export const theme = {
+    light: {
+        "--brand": "#34C759",
+        "--background": "#24b34a",
+        "--surface": "#FFFFFF",
+        "--text": "#323030",
+        "--text-on-brand": "#FFFFFF",
+        "--muted": "#6B7280",
+        "--border": "#E5E5E5",
+        "--google-text": "#171717",
+        "--apple-bg": "#000000",
+        "--apple-text": "#FFFFFF",
+    },
+    dark: {
+        "--brand": "#34C759",
+        "--background": "#111827",
+        "--surface": "#1F2937",
+        "--text": "#FFFFFF",
+        "--text-on-brand": "#FFFFFF",
+        "--muted": "#9CA3AF",
+        "--border": "#4B5563",
+        "--google-text": "#171717",
+        "--apple-bg": "#000000",
+        "--apple-text": "#FFFFFF",
+    },
+} as const;
