@@ -13,7 +13,7 @@ import { useSyncOAuthProfile } from '../hooks/useSyncOAuthProfile';
 import { AccountTabScreen } from '../screens/tabs/AccountTabScreen';
 import { HomeTabScreen } from '../screens/tabs/HomeTabScreen';
 import { SearchTabScreen } from '../screens/tabs/SearchTabScreen';
-
+import { MessagesTabScreen } from '../screens/tabs/MessagesTabScreen';
 export type MainTabParamList = {
     Home: undefined;
     Search: undefined;
@@ -66,7 +66,6 @@ export function MainTabs() {
                             backgroundColor: isDark ? '#1F2937' : '#FFFFFF',
                             borderTopColor: isDark ? '#4B5563' : '#E5E5E5',
                             height: Platform.OS === 'ios' ? 88 : 64,
-                            paddingTop: 6,
                         },
                         tabBarActiveTintColor: '#34C759',
                         tabBarInactiveTintColor: isDark ? '#9CA3AF' : '#6B7280',
@@ -91,6 +90,15 @@ export function MainTabs() {
                         options={{
                             tabBarIcon: ({ color, size }) => (
                                 <Ionicons name="search-outline" size={size} color={color} />
+                            ),
+                        }}
+                    />
+                    <Tab.Screen
+                        name="Messages"
+                        component={MessagesTabScreen}
+                        options={{
+                            tabBarIcon: ({ color, size }) => (
+                                <Ionicons name="chatbox-ellipses-outline" size={size} color={color} />
                             ),
                         }}
                     />

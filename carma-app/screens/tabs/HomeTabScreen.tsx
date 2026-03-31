@@ -26,7 +26,6 @@ export function HomeTabScreen() {
                 <Text className="text-2xl font-semibold text-[--text-on-brand]">
                     Home
                 </Text>
-                <ThemeToggle />
             </View>
 
             <View className="mt-4 rounded-2xl bg-[--surface] p-5">

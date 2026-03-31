@@ -11,7 +11,7 @@ export function ThemeToggle() {
             accessibilityRole="button"
             accessibilityLabel="Toggle dark mode"
             onPress={toggleColorScheme}
-            className="h-11 w-11 items-center justify-center rounded-full bg-[--surface] border border-[--border]"
+            className="h-11 w-11 items-center justify-center bg-[--surface] border border-[--border]"
         >
             <Ionicons
                 name={isDark ? 'sunny-outline' : 'moon-outline'}
